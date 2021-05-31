@@ -1,0 +1,55 @@
+/* Fonts */
+
+@font-face {
+    font-family: weblySleek_ui;
+    src: url(../WeblySleek_UI/weblysleekuisl.ttf) format("truetype");
+}
+
+/* General */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "weblySleek_ui", sans-serif;
+  line-height: 1.7;
+  padding: 1.5rem;
+}
+
+/* Navigation */
+
+nav {
+    margin: 1rem 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3d545c;
+    padding-right: 2rem;
+    font-weight: 1000;
+    font-size: 1.6rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+}
+
+/* Hero Section */
+
+.hero {
+    margin: 8rem 0;
+    background: linear-gradient(to right,#33aaca,#4bb8b4);
+    text-align: center;
+}

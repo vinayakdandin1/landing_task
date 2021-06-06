@@ -23,7 +23,7 @@ body {
   font-family: "weblySleek_ui", sans-serif;
   line-height: 1.7;
   padding: 0 1.5rem;
-  background-color: #f8f9facb;
+  background-color: #f8f9fa;
   box-sizing: border-box;
   font-size: 1.6rem;
 }
@@ -171,3 +171,80 @@ nav {
     color: #33aaca;
 }
 
+.hero-customer {
+    background: linear-gradient(to right,#33aaca,#4bb8b4);
+    padding: 2rem 0;
+    text-align: center;
+    min-height: 4rem;
+    color: #f8f8ff;
+    
+}
+
+.hero-customer h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero-customerVoice {
+    background: linear-gradient(to right,#33aaca,#4bb8b4);
+    padding: 1rem 10rem;
+    text-align: center;
+    min-height: 20rem;
+    color: #f8f8ff;
+}
+
+.hero-team {
+    padding: 10rem 15rem;
+    position: relative;
+    margin-bottom: 20rem;
+}
+
+.hero-team img {
+    width: 75%;
+}
+
+.hero-team-description {
+    max-width: 38rem;
+    position: absolute;
+    right: 30rem;
+    top: 25rem;
+    background-color: #fff;
+    padding: 4rem 4rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 50px 0px;
+    border-radius: 10px;
+}
+
+.hero-team-description h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4bb8b4;
+    padding-bottom: 1rem;
+}
+
+#footer-section {
+    padding: 10rem 15rem;;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact {
+    min-width: 30rem;
+}
+
+.footer-contact-detail {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.footer-contact-detail p {
+    max-width: 15rem;
+}
+
+.footer-contact-detail_image {
+    padding-left: 2rem;
+    /* padding-right: 3rem; */
+}

@@ -17,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +39,6 @@ nav {
     color: #3d545c;
     padding-right: 2rem;
     font-weight: 1000;
-    /* font-size: 1.6rem; */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -59,6 +59,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10rem;
+    
 }
 
 .hero-about-aiQuality_image {
@@ -82,6 +83,7 @@ nav {
 .hero-about-mission {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2rem 12rem;
 }
 
@@ -89,6 +91,7 @@ nav {
     max-width: 55rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-about-mission_mission h3 {
@@ -104,6 +107,7 @@ nav {
 .hero-services {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .hero-services-products {
@@ -128,12 +132,18 @@ nav {
     font-weight: bold;
 }
 
+.hero-services-products-description a {
+    text-decoration: none;
+    color: black;
+}
+
 .hero-infographic {
     background: linear-gradient(to right,#33aaca,#4bb8b4);
     padding: 4rem 10rem;
     text-align: center;
     min-height: 50rem;
     color: #f8f8ff;
+    flex-wrap: wrap;
 }
 
 .hero-infographic-carousel {
@@ -150,6 +160,7 @@ nav {
     margin: 8% 17%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-projects_image {
@@ -228,6 +239,7 @@ nav {
 .footer-main {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer-contact {
@@ -240,11 +252,189 @@ nav {
     padding-bottom: 2rem;
 }
 
-.footer-contact-detail p {
+.footer-contact-detail_description {
     max-width: 15rem;
 }
+
 
 .footer-contact-detail_image {
     padding-left: 2rem;
     /* padding-right: 3rem; */
+}
+
+.footer-contact-form h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.footer-contact-form input,.footer-contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-form-button {
+    padding: 0 2rem;
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.kit-main {
+    margin-top: 12rem;
+    padding: 0 10rem;
+}
+
+.kit-main-description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kit-main-side_image {
+    width: 30vw;
+}
+
+.kit-main-description_child {
+    max-width: 30vw;
+}
+
+@media screen and (max-width: 480px) { 
+
+    .hero {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero-about { 
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 2rem 2rem;
+    }
+
+    .hero-about-aiQuality {
+        padding: 0;
+    }
+
+    .hero-about-aiQuality_image {
+        max-width: 30vh;
+        padding-right: 0;
+    }
+
+    .hero-about-heading {
+        text-align: center;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    
+    .hero-about-details {
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 2rem 0; 
+    }
+
+    .hero-about-mission {
+        padding: 2rem 2rem;
+    }
+
+    .hero-about-mission_mission {
+        justify-content: space-around;
+    }
+
+    .neurocat-mission {
+        width: 80vw;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .hero-services-products {
+        padding: 1rem 2rem;
+    } 
+
+    .hero-services-products-description {
+        font-size: 1.8rem;
+    }
+
+    .hero-infographic {  
+        padding: 0;
+    }
+
+    .hero-infographic-carousel {
+        padding: 0 2rem;
+    }
+
+    .hero-projects {
+        margin: 0;
+        padding: 4rem 2rem 0;
+        justify-content: space-around;
+        font-size: 1.6rem;
+    }
+
+    .hero-projects_image {
+        width: 80vw;
+        padding-bottom: 2rem;
+    }
+
+    .hero-customerVoice {
+        padding: 0;  
+    }
+
+    .hero-team {
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+
+    .hero-team img {
+        width: 92vw;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .hero-team-description {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 4rem 4rem 1rem;
+    }
+
+    #footer-section {
+        padding: 2rem;
+    }
+
+    .footer-main {
+        justify-content: center; 
+    }
+
+    .footer-contact-detail {
+        justify-content: space-between; 
+    }
+
+    .footer-contact-detail_description {
+        max-width: 20rem;
+    }
+
+    .footer-contact-form textarea {
+        width: 90%;
+    }
+
+    .kit-main {
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+    
+    .kit-main-side_image {
+        width: 80vw;
+    }
+
+    .kit-main-description_child {
+        max-width: 80vw;
+        padding-top: 4rem;
+    }
+
+    .kit-main-aidkit_image {
+        width: 95%;
+        padding-bottom: 2rem;
+    }
+
 }
